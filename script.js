@@ -50,12 +50,6 @@ function loadLabeledImages() {
       }
 
       return new faceapi.LabeledFaceDescriptors(label, descriptions)
-    })it faceapi.fetchImage(`labeled_images/${label}/${i}.jpg`)
-        const detections = await faceapi.detectSingleFace(img).withFaceLandmarks().withFaceDescriptor()
-        descriptions.push(detections.descriptor)
-      }
-
-      return new faceapi.LabeledFaceDescriptors(label, descriptions)
     })
   )
 }
